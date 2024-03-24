@@ -1,0 +1,76 @@
+# Welcome to my MDX page!
+
+> Simple Homepage & blog made with Next.js, MDX and Shadcn UI 🚀
+
+A starter kit for sites with blogs, using a modern stack to accelerate website building and gain flexible scalability!
+
+## Stacks details
+
+We used modern tooling to build this example project, including:
+
+- [Next.js 14.1.0](https://nextjs.org) App Router
+- React Server Components (RSCs), Suspense, and Server Actions
+- Written in [TypeScript](https://www.typescriptlang.org)
+- [shadcn/ui](https://ui.shadcn.com)
+  - Styling with [Tailwind CSS](https://tailwindcss.com)
+  - [Radix UI](https://radix-ui.com) for headless component primitives
+  - Icons from [lucide-react](https://lucide.dev/guide/packages/lucide-react)
+  - Dark mode for [next-themes](https://github.com/pacocoursey/next-themes)
+- [MDX](https://mdxjs.com) lets you use JSX in your markdown content.
+  - Markdown styling with [tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin)
+  - rehype-prism
+  - remark-gfm
+
+## directory structure
+
+[Store project files outside of app](https://nextjs.org/docs/app/building-your-application/routing/colocation#store-project-files-outside-of-app) according to Shadcn/ui.
+
+And the addDir hierarchy is divided into 3 levels.
+
+1. metadata files via Next.js.
+2. Basic site page structure.
+3. The concept of [co-location](https://kentcdodds.com/blog/colocation).
+
+```
+├─app
+|   ├─(pages)
+|   |   ├─(root)
+|   |   │   ├─page.tsx
+|   |   │   ├─_components
+|   |   │   │   └─componentA.tsx
+|   |   │   └─_types
+|   |   |       └─types.ts
+|   |   ├─pageA
+|   |   |   ├─page.tsx
+|   |   |   ├─_components
+|   |   |   │   └─componentA.tsx
+|   |   |   └─_types
+|   |   |      └─types.ts
+|   |   └─layout.tsx
+|   ├─error.tsx
+|   ├─layout.tsx
+|   ├─loading.tsx
+|   └─not-found.tsx
+|
+├─components
+|   ├─navbar.tsx
+|   └─ui
+|     └─button.tsx
+├─libs
+|
+
+```
+
+## Reference
+
+Here's a list of other related projects where you can find inspiration for your own project:
+
+- test
+
+## License
+
+One really important part: Give your project a proper license. Here you should
+state what the license is and how to find the text version of the license.
+Something like:
+
+"The code in this project is licensed under MIT license."
